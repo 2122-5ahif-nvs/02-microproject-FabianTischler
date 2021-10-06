@@ -1,0 +1,27 @@
+@startuml
+
+class Book{
+    id: int
+    boookName: String
+    publisher: String
+    author: String
+}
+
+class Author{
+    authorFirstName: String
+    authorLastName: String
+    noOfBooks: int
+    Nationality: String
+}
+
+class Publisher{
+    publisherName: String
+    publishedBooks: List<Book>
+}
+
+Book <-- Author : has 1 >
+Book <- Publisher :  has 1 >
+
+
+@enduml
+
