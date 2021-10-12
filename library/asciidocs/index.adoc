@@ -1,0 +1,20 @@
+= MikroProjekt Library
+Fabian Tischler
+2.0.0, 2020-11-08
+
+Class Diagram
+[plantuml, cld, png, aligh=left]
+----
+include::plantuml/cld.puml[]
+----
+---
+UseCase Diagram
+[plantuml, ucd, png, aligh=left]
+----
+include::plantuml/ucd.puml[]
+----
+UseCase Diagram for DB
+[plantuml, ucd_db, png, aligh=left]
+----
+include::plantuml/ucd_db.puml[]
+----

@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+actor "Librarian" as lib
+actor "Customer" as cust
+rectangle Library {
+  usecase "Add new Book" as UC1
+  usecase "Rent Book" as UC2
+  usecase "Dispose Books" as UC3
+}
+lib --> UC1
+cust --> UC2
+lib --> UC3
+@enduml
