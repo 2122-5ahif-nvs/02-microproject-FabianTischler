@@ -1,17 +1,24 @@
 package at.htl.library.entity;
 
+import org.eclipse.microprofile.openapi.annotations.media.Schema;
+
+import javax.json.bind.annotation.JsonbProperty;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "L_AUTHOR")
+@Schema(description = "Authors of the Books in the DB")
 public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "A_ID")
+    @Schema(required = true)
     private Long id;
     @Column(name = "A_FIRSTNAME")
+    @JsonbProperty("author_firstname")
     private String authorFirstName;
     @Column(name = "A_LASTNAME")
+    @JsonbProperty("author_lastname")
     private String authorLastName;
     @Column(name = "A_NATIONALITY")
     private String nationality;
