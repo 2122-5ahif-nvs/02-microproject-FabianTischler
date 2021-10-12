@@ -7,11 +7,11 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.native -t quarkus/library-microroject .
+# docker build -f src/main/docker/Dockerfile.native -t quarkus/library .
 #
 # Then run the container using:
 #
-# docker run -i --rm -p 8080:8080 quarkus/library-microroject
+# docker run -i --rm -p 8080:8080 quarkus/library
 #
 ###
 FROM registry.access.redhat.com/ubi8/ubi-minimal:8.4
